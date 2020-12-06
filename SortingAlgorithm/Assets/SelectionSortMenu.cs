@@ -88,12 +88,12 @@ public class SelectionSortMenu : MonoBehaviour
             }
             dropdown.value = 0;
         }
-        else if (ActiveSorted != null)
-        {
-            text.text = ("Clear First Instance!");
-           
-            dropdown.value = 0;
-        }
+        //else if (ActiveSorted != null)
+        //{
+        //    text.text = ("Clear First Instance!");
+        //   
+        //    dropdown.value = 0;
+        //}
     }
 
 }
