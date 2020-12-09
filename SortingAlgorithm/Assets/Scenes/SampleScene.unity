@@ -1452,6 +1452,10 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Insertion Sort
       m_Image: {fileID: 0}
+    - m_Text: Quick Sort
+      m_Image: {fileID: 0}
+    - m_Text: Heap Sort
+      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:

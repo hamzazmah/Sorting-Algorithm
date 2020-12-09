@@ -15,6 +15,7 @@ public class SelectionSortMenu : MonoBehaviour
     public Dropdown dropdown;
     public Text text;
 
+    //Resets Sort
     public void ResetSort()
     {
         //yield return new WaitForSeconds(1);
@@ -32,6 +33,7 @@ public class SelectionSortMenu : MonoBehaviour
         }
     }
 
+    //Handles Input from Combo Box
     public void HandleInputData(int val)
     {
         int maxVal ;
@@ -85,15 +87,19 @@ public class SelectionSortMenu : MonoBehaviour
                     text.text = ("Insertion Sort");
                     ActiveSorted.StartInsertionSort();
                 }
+                if (val == 5)
+                {
+                    text.text = ("Quick Sort");
+                    StartCoroutine(ActiveSorted.StartQuickSort());
+                }
+                if (val == 6)
+                {
+                    text.text = ("Heap Sort");
+                    StartCoroutine(ActiveSorted.StartHeapSort());
+                }
             }
             dropdown.value = 0;
         }
-        //else if (ActiveSorted != null)
-        //{
-        //    text.text = ("Clear First Instance!");
-        //   
-        //    dropdown.value = 0;
-        //}
     }
 
 }
